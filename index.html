@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jules Oskar - house DJ and producer. Live at Boulder Theater. Based in Boulder, relocating to Barcelona in January 2027." />
+  <meta name="description" content="Jules Oskar — Brooklyn-born house DJ and producer. Live performances, selected shows, and booking information. Boulder to Barcelona, January 2027." />
   <meta name="theme-color" content="#050505" />
-  <title>Jules Oskar - DJ / Producer</title>
+  <title>Jules Oskar — DJ / Producer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="nav">
     <a href="#top" class="nav-mark" aria-label="Jules Oskar home"><img src="assets/logo.png" alt="Jules Oskar" /></a>
-    <nav>
-      <a href="#performance">Live</a>
+    <nav aria-label="Primary navigation">
+      <a href="#live">Live</a>
+      <a href="#performance">Photos</a>
       <a href="#dates">Shows</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -20,39 +21,47 @@
   </header>
 
   <main id="top">
-    <section class="hero">
+    <section class="hero" aria-label="Jules Oskar live">
       <video class="hero-video" autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/hero-montage-poster.jpg">
         <source src="assets/hero-montage.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
       <div class="hero-content">
+        <p class="eyebrow">HOUSE / DJ / PRODUCER</p>
         <h1>Jules Oskar</h1>
-        <p>DJ / Producer <span>•</span> Boulder <span>•</span> Barcelona from January 2027</p>
+        <p class="hero-meta">Boulder, Colorado <span>→</span> Barcelona from January 2027</p>
         <div class="hero-links">
           <a href="#live">Live</a>
           <a href="#dates">Dates</a>
           <a href="mailto:julesoskar@gmail.com?subject=Jules%20Oskar%20Booking">Booking</a>
         </div>
       </div>
+      <div class="scroll-cue">SCROLL</div>
     </section>
 
-
-    <section id="live" class="recap-section">
-      <div class="recap-backdrop" aria-hidden="true"></div>
-      <div class="reel-tag reveal">LIVE / 2026</div>
-      <div class="recap-inner recap-centered reveal">
-        <div class="recap-video-shell">
+    <section id="live" class="live-feature">
+      <div class="live-label reveal">
+        <span>01</span>
+        <strong>LIVE</strong>
+      </div>
+      <div class="live-feature-grid">
+        <div class="reel-wrap reveal">
           <video autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/rossi-recap-poster.jpg">
             <source src="assets/rossi-recap.mp4" type="video/mp4" />
           </video>
         </div>
+        <figure class="live-portrait reveal">
+          <img src="assets/stage-blue.jpg" alt="Jules Oskar DJing under blue stage lights" />
+        </figure>
       </div>
     </section>
 
-    <section id="performance" class="section live-section">
+    <section id="performance" class="section performance-section">
       <div class="section-head reveal">
-        <p class="kicker">02 / SELECTED PERFORMANCE</p>
-        <h2>ROSSI. / BOULDER THEATER</h2>
+        <div>
+          <p class="kicker">02 / SELECTED PERFORMANCE</p>
+          <h2>ROSSI. / BOULDER THEATER</h2>
+        </div>
         <p class="section-note">September 24, 2026</p>
       </div>
 
@@ -60,42 +69,24 @@
         <img src="assets/rossi-red-wide.jpg" alt="Jules Oskar performing at Boulder Theater under red lights with the crowd in front" />
       </figure>
 
-      <div class="editorial-grid reveal">
-        <figure class="tile tall"><img src="assets/rossi-pointing.jpg" alt="Jules Oskar performing under stage lights at Boulder Theater" /></figure>
-        <figure class="tile"><img src="assets/rossi-gold-wide.jpg" alt="Jules Oskar performing beneath gold stage lights at Boulder Theater" /></figure>
-        <figure class="tile tall"><img src="assets/rossi-purple-hands.jpg" alt="Jules Oskar performing beneath purple lasers at Boulder Theater" /></figure>
-        <figure class="tile"><img src="assets/rossi-bw-stage.jpg" alt="Jules Oskar performing at Boulder Theater in black and white" /></figure>
+      <div class="pro-grid reveal">
+        <figure><img src="assets/stage-magenta.jpg" alt="Jules Oskar performing under magenta stage light" /></figure>
+        <figure><img src="assets/stage-bw.jpg" alt="Jules Oskar performing in black and white at the decks" /></figure>
+        <figure><img src="assets/stage-yellow.jpg" alt="Jules Oskar performing under yellow and blue stage light" /></figure>
+        <figure><img src="assets/rossi-yellow-portrait.jpg" alt="Jules Oskar performing under a yellow spotlight at Boulder Theater" /></figure>
       </div>
 
-      <div class="video-photo-split reveal">
-        <figure class="portrait-feature"><img src="assets/rossi-yellow-portrait.jpg" alt="Jules Oskar performing under a yellow spotlight at Boulder Theater" /></figure>
-        <div class="stacked-stills">
-          <figure><img src="assets/rossi-bw-portrait.jpg" alt="Jules Oskar in silhouette at Boulder Theater" /></figure>
-          <figure><img src="assets/rossi-red-vertical.jpg" alt="Jules Oskar performing under red lights at Boulder Theater" /></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section boulder-section">
-      <div class="section-head reveal compact-head">
-        <p class="kicker">03 / BOULDER</p>
-        <h2>EARLIER SETS</h2>
-      </div>
-      <div class="boulder-grid reveal">
-        <div class="basement-video">
-          <video autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/basement-hero-poster.jpg">
-            <source src="assets/basement-hero.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <figure><img src="assets/boulder-crowd.jpg" alt="Packed Boulder crowd during a Jules Oskar set" /></figure>
-        <figure><img src="assets/boulder-booth.jpg" alt="Jules Oskar performing in a packed Boulder room" /></figure>
-      </div>
+      <figure class="performance-banner reveal">
+        <img src="assets/rossi-pointing.jpg" alt="Jules Oskar directing the crowd from the stage at Boulder Theater" />
+      </figure>
     </section>
 
     <section id="dates" class="section dates-section">
       <div class="section-head reveal">
-        <p class="kicker">04 / DATES</p>
-        <h2>SHOWS</h2>
+        <div>
+          <p class="kicker">03 / DATES</p>
+          <h2>SHOWS</h2>
+        </div>
       </div>
       <div class="dates-list reveal">
         <div class="date-row played">
@@ -111,17 +102,36 @@
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section class="section boulder-section">
+      <div class="section-head compact reveal">
+        <div>
+          <p class="kicker">04 / BOULDER</p>
+          <h2>EARLIER SETS</h2>
+        </div>
+        <p class="section-note">Where the live project took shape.</p>
+      </div>
+      <div class="boulder-grid reveal">
+        <div class="basement-video">
+          <video autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/basement-hero-poster.jpg">
+            <source src="assets/basement-hero.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <figure><img src="assets/boulder-crowd.jpg" alt="Packed Boulder crowd during a Jules Oskar set" /></figure>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
       <div class="about-copy reveal">
         <p class="kicker">05 / ABOUT</p>
         <h2>JULES OSKAR</h2>
-        <p class="lead">Jules Oskar is a house DJ and producer currently based in Boulder, Colorado, and relocating to Barcelona in January 2027.</p>
+        <p class="lead">Brooklyn-born house DJ and producer Jules Oskar is currently based in Boulder, Colorado, and will be based in Barcelona from January 2027.</p>
         <p>His sets move between groove-heavy house, old-school vocals, and UK-influenced club records. After building a live following through packed Boulder parties, he opened for Rossi. at Boulder Theater in September 2026 and returns to support ChaseWest on October 29.</p>
         <p>Before performing as Jules Oskar, he released <em>Losing All Control</em> on Broke Records under the name DUTCH.</p>
       </div>
-      <figure class="about-photo reveal">
-        <img src="assets/rossi-portrait-stairs.jpg" alt="Jules Oskar backstage at Boulder Theater" />
-      </figure>
+      <div class="about-visual reveal">
+        <figure class="about-main"><img src="assets/rossi-portrait-stairs.jpg" alt="Jules Oskar backstage at Boulder Theater" /></figure>
+        <figure class="about-inset"><img src="assets/postset.jpg" alt="Jules Oskar after a live set" /></figure>
+      </div>
     </section>
 
     <section class="credits-strip" aria-label="Career highlights">

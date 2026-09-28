@@ -1,12 +1,18 @@
-JULES OSKAR — WEBSITE UPDATE V4
+JULES OSKAR — WEBSITE UPDATE V6
 
-Changes in this version:
-- Hero rebuilt as a fast-cut montage alternating packed-room crowd energy and stage footage
-- Removed the venue-specific hero caption
-- Featured vertical live reel remains prominent but is now presented simply as LIVE / 2026
-- Rossi. / Boulder Theater now appears after the general live reel as a selected performance
-- Existing photo centering/cropping refinements preserved
-- Rossi marked as played; ChaseWest remains upcoming
+Professional live-first overhaul.
+
+Changes:
+- Hero fast-cut montage retained
+- Featured live reel paired with a new professional stage portrait
+- New professional performance photography added throughout
+- Cleaner editorial gallery and more consistent image crops
+- Brooklyn-born identity retained subtly in About
+- Shirtless frat image remains removed
+- Boulder earlier-set footage retained lower on the page
+- Rossi. / Boulder Theater remains the selected performance
+- ChaseWest remains upcoming
+- Barcelona booking information remains clear without dominating the site
 
 GitHub Pages update:
-Replace index.html, style.css, script.js, README.txt, and the assets folder in your repo, then commit to main.
+Upload index.html, style.css, script.js, README.txt, .nojekyll, and the full assets folder to the existing repository, then commit to main.
