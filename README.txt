@@ -1,12 +1,9 @@
-JULES OSKAR — WEBSITE UPDATE V8
+JULES OSKAR — WEBSITE UPDATE V9
 
-Cleaner immersive layout:
-- Removed numbered/statement-style section headers
-- No large empty title blocks or dead black space
-- Live media runs edge-to-edge
-- Rossi feature is identified directly on the imagery
-- Shows use a compact split layout
-- Boulder footage and crowd image fill the full section
-- About is a full-height editorial split with photos
-- Contact is a full-bleed image section
-- Same dark, high-energy live-performance identity
+Refinements from review:
+- Removed overlay tags from live videos
+- Separated the post-set towel portrait from the main stair portrait
+- Shortened the Brooklyn / Boulder / Barcelona bio line
+- Lightened the Jules Oskar hero wordmark typography
+- Shifted hero metadata to the site blue accent
+- Preserved the edge-to-edge live-first layout and media-heavy energy
