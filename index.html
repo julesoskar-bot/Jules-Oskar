@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jules Oskar — Brooklyn-born house DJ and producer. Live performances, selected shows, and booking information. Boulder to Barcelona, January 2027." />
+  <meta name="description" content="Jules Oskar — Brooklyn-born house DJ and producer. Live performances, selected shows, and booking information." />
   <meta name="theme-color" content="#050505" />
   <title>Jules Oskar — DJ / Producer</title>
   <link rel="stylesheet" href="style.css" />
@@ -13,152 +13,109 @@
     <a href="#top" class="nav-mark" aria-label="Jules Oskar home"><img src="assets/logo.png" alt="Jules Oskar" /></a>
     <nav aria-label="Primary navigation">
       <a href="#live">Live</a>
-      <a href="#performance">Photos</a>
-      <a href="#dates">Shows</a>
+      <a href="#shows">Shows</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero" aria-label="Jules Oskar live">
-      <video class="hero-video" autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/hero-montage-poster.jpg">
+    <section class="hero">
+      <div class="hero-fallback" aria-hidden="true"></div>
+      <video class="hero-video js-autoplay" autoplay muted loop playsinline preload="metadata" disablepictureinpicture poster="assets/hero-montage-poster.jpg">
         <source src="assets/hero-montage.mp4" type="video/mp4" />
       </video>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">HOUSE / DJ / PRODUCER</p>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
         <h1>Jules Oskar</h1>
-        <p class="hero-meta">Boulder, Colorado <span>→</span> Barcelona from January 2027</p>
-        <div class="hero-links">
-          <a href="#live">Live</a>
-          <a href="#dates">Dates</a>
-          <a href="mailto:julesoskar@gmail.com?subject=Jules%20Oskar%20Booking">Booking</a>
-        </div>
-      </div>
-      <div class="scroll-cue">SCROLL</div>
-    </section>
-
-    <section id="live" class="live-feature">
-      <div class="live-label reveal">
-        <span>01</span>
-        <strong>LIVE</strong>
-      </div>
-      <div class="live-feature-grid">
-        <div class="reel-wrap reveal">
-          <video autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/rossi-recap-poster.jpg">
-            <source src="assets/rossi-recap.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <figure class="live-portrait reveal">
-          <img src="assets/stage-blue.jpg" alt="Jules Oskar DJing under blue stage lights" />
-        </figure>
+        <div class="hero-line"><span>DJ / PRODUCER</span><span>BOULDER · BARCELONA 2027</span></div>
       </div>
     </section>
 
-    <section id="performance" class="section performance-section">
-      <div class="section-head reveal">
-        <div>
-          <p class="kicker">02 / SELECTED PERFORMANCE</p>
-          <h2>ROSSI. / BOULDER THEATER</h2>
-        </div>
-        <p class="section-note">September 24, 2026</p>
+    <section id="live" class="live-wall">
+      <figure class="live-panel photo-a"><img src="assets/stage-magenta.jpg" alt="Jules Oskar performing under magenta stage lighting" /></figure>
+      <div class="live-panel reel-panel" style="--poster:url('assets/rossi-recap-poster.jpg')">
+        <video class="js-autoplay" autoplay muted loop playsinline preload="metadata" disablepictureinpicture poster="assets/rossi-recap-poster.jpg">
+          <source src="assets/rossi-recap.mp4" type="video/mp4" />
+        </video>
+        <div class="panel-label">LIVE / 2026</div>
       </div>
+      <figure class="live-panel photo-b"><img src="assets/stage-yellow.jpg" alt="Jules Oskar performing under yellow stage lighting" /></figure>
+    </section>
 
-      <figure class="feature-wide reveal">
-        <img src="assets/rossi-red-wide.jpg" alt="Jules Oskar performing at Boulder Theater under red lights with the crowd in front" />
+    <section class="rossi-feature">
+      <figure class="rossi-cover"><img src="assets/rossi-red-wide.jpg" alt="Jules Oskar performing at Boulder Theater under red lights" />
+        <figcaption><strong>ROSSI.</strong><span>BOULDER THEATER · SEP 24 2026</span></figcaption>
       </figure>
-
-      <div class="pro-grid reveal">
-        <figure><img src="assets/stage-magenta.jpg" alt="Jules Oskar performing under magenta stage light" /></figure>
-        <figure><img src="assets/stage-bw.jpg" alt="Jules Oskar performing in black and white at the decks" /></figure>
-        <figure><img src="assets/stage-yellow.jpg" alt="Jules Oskar performing under yellow and blue stage light" /></figure>
-        <figure><img src="assets/rossi-yellow-portrait.jpg" alt="Jules Oskar performing under a yellow spotlight at Boulder Theater" /></figure>
+      <div class="rossi-grid">
+        <figure><img src="assets/stage-blue.jpg" alt="Jules Oskar DJing under blue stage lights" /></figure>
+        <figure><img src="assets/stage-bw.jpg" alt="Jules Oskar performing in black and white" /></figure>
+        <figure><img src="assets/rossi-bw-stage.jpg" alt="Jules Oskar at the decks under a spotlight" /></figure>
+        <figure><img src="assets/rossi-purple-hands.jpg" alt="Jules Oskar performing under purple lighting" /></figure>
       </div>
-
-      <figure class="performance-banner reveal">
-        <img src="assets/rossi-pointing.jpg" alt="Jules Oskar directing the crowd from the stage at Boulder Theater" />
-      </figure>
+      <figure class="rossi-action"><img src="assets/rossi-pointing.jpg" alt="Jules Oskar directing the crowd from the stage" /></figure>
     </section>
 
-    <section id="dates" class="section dates-section">
-      <div class="section-head reveal">
-        <div>
-          <p class="kicker">03 / DATES</p>
-          <h2>SHOWS</h2>
-        </div>
-      </div>
-      <div class="dates-list reveal">
-        <div class="date-row played">
-          <div class="date-day"><span>SEP</span><strong>24</strong><small>2026</small></div>
-          <div class="date-main"><h3>ROSSI.</h3><p>Support — Boulder Theater</p></div>
-          <div class="date-place"><span>Played</span>Boulder, Colorado</div>
-        </div>
-        <div class="date-row">
-          <div class="date-day"><span>OCT</span><strong>29</strong><small>2026</small></div>
-          <div class="date-main"><h3>CHASEWEST</h3><p>Support — Boulder Theater</p></div>
-          <div class="date-place"><span>Upcoming</span>Boulder, Colorado</div>
+    <section id="shows" class="shows-split">
+      <figure class="shows-image"><img src="assets/rossi-yellow-portrait.jpg" alt="Jules Oskar on stage under yellow lighting" /></figure>
+      <div class="shows-panel">
+        <div class="simple-label">SHOWS</div>
+        <div class="date-list">
+          <div class="date-row played">
+            <div class="date"><span>SEP 24</span><small>2026</small></div>
+            <div class="event"><strong>ROSSI.</strong><span>BOULDER THEATER · BOULDER, CO</span></div>
+            <div class="status">PLAYED</div>
+          </div>
+          <div class="date-row">
+            <div class="date"><span>OCT 29</span><small>2026</small></div>
+            <div class="event"><strong>CHASEWEST</strong><span>BOULDER THEATER · BOULDER, CO</span></div>
+            <div class="status upcoming">UPCOMING</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section boulder-section">
-      <div class="section-head compact reveal">
-        <div>
-          <p class="kicker">04 / BOULDER</p>
-          <h2>EARLIER SETS</h2>
-        </div>
-        <p class="section-note">Where the live project took shape.</p>
+    <section class="boulder-wall">
+      <div class="boulder-video" style="--poster:url('assets/basement-hero-poster.jpg')">
+        <video class="js-autoplay" autoplay muted loop playsinline preload="metadata" disablepictureinpicture poster="assets/basement-hero-poster.jpg">
+          <source src="assets/basement-hero.mp4" type="video/mp4" />
+        </video>
+        <div class="panel-label">BOULDER / 2025–26</div>
       </div>
-      <div class="boulder-grid reveal">
-        <div class="basement-video">
-          <video autoplay muted loop playsinline preload="auto" disablepictureinpicture poster="assets/basement-hero-poster.jpg">
-            <source src="assets/basement-hero.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <figure><img src="assets/boulder-crowd.jpg" alt="Packed Boulder crowd during a Jules Oskar set" /></figure>
-      </div>
+      <figure><img src="assets/boulder-crowd.jpg" alt="Packed Boulder crowd during a Jules Oskar set" /></figure>
     </section>
 
-    <section id="about" class="section about-section">
-      <div class="about-copy reveal">
-        <p class="kicker">05 / ABOUT</p>
-        <h2>JULES OSKAR</h2>
-        <p class="lead">Brooklyn-born house DJ and producer Jules Oskar is currently based in Boulder, Colorado, and will be based in Barcelona from January 2027.</p>
-        <p>His sets move between groove-heavy house, old-school vocals, and UK-influenced club records. After building a live following through packed Boulder parties, he opened for Rossi. at Boulder Theater in September 2026 and returns to support ChaseWest on October 29.</p>
+    <section id="about" class="about-split">
+      <div class="about-panel">
+        <div class="simple-label">ABOUT</div>
+        <p class="about-lead">Brooklyn-born house DJ and producer, currently based in Boulder and moving to Barcelona in January 2027.</p>
+        <p>Jules Oskar plays groove-heavy house, old-school vocals, and UK-influenced club music. After building a live following through packed Boulder parties, he opened for Rossi. at Boulder Theater and returns to support ChaseWest on October 29.</p>
         <p>Before performing as Jules Oskar, he released <em>Losing All Control</em> on Broke Records under the name DUTCH.</p>
+        <div class="about-stats">
+          <div><span>RELEASED ON</span><strong>BROKE RECORDS</strong></div>
+          <div><span>OPENED FOR</span><strong>ROSSI.</strong></div>
+          <div><span>SUPPORTING</span><strong>CHASEWEST</strong></div>
+          <div><span>BASED 2027</span><strong>BARCELONA</strong></div>
+        </div>
       </div>
-      <div class="about-visual reveal">
-        <figure class="about-main"><img src="assets/rossi-portrait-stairs.jpg" alt="Jules Oskar backstage at Boulder Theater" /></figure>
+      <div class="about-visual">
+        <figure class="about-main"><img src="assets/rossi-portrait-stairs.jpg" alt="Jules Oskar backstage" /></figure>
         <figure class="about-inset"><img src="assets/postset.jpg" alt="Jules Oskar after a live set" /></figure>
       </div>
     </section>
 
-    <section class="credits-strip" aria-label="Career highlights">
-      <div><span>RELEASED ON</span><strong>BROKE RECORDS</strong></div>
-      <div><span>OPENED FOR</span><strong>ROSSI.</strong></div>
-      <div><span>SUPPORTING</span><strong>CHASEWEST</strong></div>
-      <div><span>BASED 2027</span><strong>BARCELONA</strong></div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="contact-top reveal">
-        <p class="kicker">06 / CONTACT</p>
-        <h2>BOOKING</h2>
-        <p>Based in Barcelona from January 2027. Available for bookings in Spain and across Europe.</p>
+    <section id="contact" class="contact-hero">
+      <img class="contact-bg" src="assets/rossi-bw-portrait.jpg" alt="Jules Oskar on stage" />
+      <div class="contact-shade"></div>
+      <div class="contact-copy">
+        <div class="simple-label">BOOKINGS</div>
+        <a class="mail" href="mailto:julesoskar@gmail.com">julesoskar@gmail.com</a>
+        <a class="social" href="https://instagram.com/julesoskardj" target="_blank" rel="noreferrer">@julesoskardj</a>
+        <p>Barcelona from January 2027 · Available in Spain and across Europe</p>
       </div>
-      <div class="contact-grid reveal">
-        <div><span>EMAIL</span><a href="mailto:julesoskar@gmail.com">julesoskar@gmail.com</a></div>
-        <div><span>INSTAGRAM</span><a href="https://instagram.com/julesoskardj" target="_blank" rel="noreferrer">@julesoskardj</a></div>
-        <div><span>LOCATION</span><strong>Boulder → Barcelona</strong></div>
-      </div>
-      <footer>
-        <img src="assets/logo.png" alt="Jules Oskar" />
-        <span>DJ / PRODUCER</span>
-      </footer>
+      <footer><img src="assets/logo.png" alt="Jules Oskar" /><span>DJ / PRODUCER</span></footer>
     </section>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
